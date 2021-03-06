@@ -591,3 +591,60 @@ footer nav ul {
 .footer--copyright span {
   padding-left: 10px;
 }
+
+/*##############################1280px이상일때##############################*/
+@media(min-width: 1280px){
+
+	header, .department, main, footer {width: 1040px;
+									   margin-right: auto;
+									   margin-left: auto;}
+
+/*header 배열설정*/
+
+header:after{display: block; clear: both; content: ""}
+
+.logo{float: left;
+	  width: 20%;
+	  }
+
+.menu{float: left;
+	  width: 70%;
+	  box-sizing: border-box;}
+
+header>input{width: 5%;} /*5%로 줘야 안떨어짐..왜?*/
+
+/*logo 상세설정*/
+.logo a{display:block;
+		font-size: 16pt;
+		letter-spacing: 1.5px;
+}
+
+/*menu 설정*/
+.menu{font-size: 12pt;
+	  letter-spacing: 1px;}
+
+
+
+
+
+/*alumni 설정*/
+.alumni--img{float: left;
+			width: 70%;
+			height: auto;
+			}
+
+
+.alumni--article{float: left;
+				width:30%}
+
+
+
+/*##############################1680px이상일때##############################*/
+@media(min-width: 1600px){
+
+	header, .department, main, footer{width: 1440px;
+									  margin-right: auto;
+									  margin-left: auto;}
+
+}
+
