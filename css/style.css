@@ -1,0 +1,593 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700|Roboto:400,500,700&display=swap");
+
+/*전체설정*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+image {
+  border: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #1f1618;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/*mainBackground*/
+.mainbackground {
+  background: url(/img/yale_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 38%;
+  height: 1300px;
+}
+
+/*header 배열설정*/
+
+header:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.logo {
+  float: left;
+  width: 20%;
+}
+
+.menu {
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+}
+
+.hamburger {
+  display: none;
+}
+
+header {
+  padding-top: 1%;
+}
+
+/*logo 상세설정*/
+.logo a {
+  display: block;
+  font-weight: 700;
+  font-family: "Cinzel", serif;
+  font-size: 20pt;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+/*메뉴 */
+.menu {
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
+.menu ul {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.menu > ul > li {
+  float: left;
+  width: 20%;
+}
+
+.menu > ul > li {
+  position: relative;
+}
+
+.menu ul li:hover {
+  background: #6d594e;
+}
+
+.menu ul li ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.menu ul li ul {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu ul li a {
+  text-align: center;
+  display: block;
+  padding: 10px;
+}
+.lnb li a {
+  font-size: 13px;
+}
+
+.menu > ul > li:hover ul {
+  display: flex;
+  background: #6d594e;
+}
+
+.menu ul li ul li:hover {
+  background: #867369;
+}
+
+/*form*/
+
+.search {
+  display: flex;
+  padding-top: 8px;
+}
+
+.fas fa-search {
+  color: white;
+  position: absolute;
+  z-index: 100;
+  right: 160px;
+}
+
+.searchbar {
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+  width: 140px;
+  color: white;
+  font-size: 1.063rem;
+}
+
+/*department 배열설정*/
+
+.department:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.department--summary {
+  float: left;
+  width: 20%;
+}
+
+.department--slideimage {
+  float: left;
+  width: 80%;
+}
+
+.department--slideimage:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.department--slideimage li {
+  float: left;
+  width: 25%;
+}
+
+.department {
+  margin-top: 35%;
+}
+
+/*department--summary 상세설정*/
+
+.department--summary h2 {
+  font-size: 20pt;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.department--summary p {
+  margin-top: 8%;
+  letter-spacing: 0.5px;
+}
+
+.department--summary a {
+  display: inline-block;
+  margin-top: 16%;
+}
+
+.department--summary a:hover {
+  background: #6d594e;
+  border-radius: 90%;
+}
+
+/*department--slideimage 상세설정*/
+
+.department--slideimage:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.department--slideimage li {
+  position: relative;
+}
+
+.department--slideimage li:hover {
+  z-index: 300;
+}
+.department--slideimage a {
+  display: block;
+}
+
+.department--slideimage img {
+  width: auto;
+}
+
+.department--slideimage li a {
+  display: block;
+}
+
+.department--slideimage p {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 16pt;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.5),
+    0px -4px 10px rgba(255, 255, 255, 0.5);
+}
+
+/*main 백그라운드 이미지 조각 설정*/
+.piece_1 {
+  position: absolute;
+  z-index: -100;
+  top: 855px;
+}
+
+/*news 설정 */
+.news ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.news li:nth-child(1) {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+}
+.news li:nth-child(2) {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+}
+.news li:nth-child(3) {
+  float: left;
+  width: 32%;
+}
+
+.news h2 {
+  font-size: 20pt;
+  text-align: center;
+}
+
+.news ul {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.news img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.news a {
+  position: relative;
+  display: block;
+}
+
+.news a:hover {
+  opacity: 0.7;
+}
+
+.news--text p {
+  color: #fff;
+  position: absolute;
+  top: 77%;
+  background-color: #492f22;
+  font-size: 11pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 70%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.news--text span {
+  display: block;
+  padding-top: 30px;
+  padding-left: 10px;
+  height: 100px;
+  color: black;
+  font-size: 10pt;
+  background-color: #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.news > .more {
+  text-align: center;
+}
+
+/*more box 설정*/
+
+.more a {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 20px 55px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.more a:hover {
+  background: #6d594e;
+}
+
+/*events*/
+
+.events--ex--per:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.events--exhibition {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+.events--performance {
+  float: left;
+  width: 49%;
+}
+
+.events {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.events h2 {
+  font-size: 20pt;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.events--box a {
+  display: block;
+  padding: 3% 0;
+  padding-left: 2%;
+}
+.events--box a:hover {
+  background: #6d594e;
+}
+
+.events--box a:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.events--box img {
+  float: left;
+  width: 40%;
+}
+.events--box ul {
+  float: left;
+  margin-top: 3%;
+  margin-left: 2%;
+  width: 58%;
+}
+
+.events > .more {
+  margin-top: 5%;
+  text-align: center;
+}
+
+/*events 박스 선 설정*/
+
+.events h3 {
+  border-bottom: 2px solid #fff;
+}
+.events--box {
+  border-bottom: 2px solid #fff;
+}
+.events--box--top {
+  border-bottom: 2px solid #fff;
+}
+
+/*events text*/
+.events--text {
+  padding-left: 5px;
+  box-sizing: border-box;
+  font-size: 11pt;
+}
+
+.events--text b {
+  letter-spacing: 1px;
+}
+
+.events--text p {
+  margin-top: 5%;
+  font-size: 9pt;
+  letter-spacing: 1px;
+}
+
+.events--text span {
+  display: inline-block;
+  margin-top: 2.5%;
+  letter-spacing: 1px;
+}
+
+/*Alumni 간격설정*/
+
+.alumni--after:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.alumni--after aside {
+  float: left;
+  width: 60%;
+}
+
+.alumni--after article {
+  float: left;
+  width: 40%;
+}
+
+.alumni article {
+  margin-top: 5%;
+}
+
+.alumni--name {
+  display: block;
+  margin-bottom: 5%;
+  font-size: 14pt;
+}
+
+.alumni--name p {
+  display: inline-block;
+}
+
+.alumni span {
+  letter-spacing: 1px;
+  display: block;
+}
+
+.alumni img {
+  width: 500px;
+}
+
+.alumni h2 {
+  font-size: 20pt;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.alumni {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+#alumni--more {
+  margin-top: 20%;
+}
+
+/*footer*/
+
+footer {
+  margin-top: 5%;
+}
+
+.footer--top--wrap ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.footer--top--wrap li {
+  float: left;
+  width: 25%;
+}
+
+.footer--top--wrap {
+  margin-bottom: 2.5%;
+}
+
+footer nav ul {
+  padding-top: 20px;
+}
+
+/*footer sns/onthissite/maincampuses after 정렬*/
+.footer--middle--wrap:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.footer--sns {
+  float: left;
+  width: 20%;
+}
+.footer--onthissite {
+  float: left;
+  width: 60%;
+}
+
+.footer--maincampuses {
+  float: left;
+  width: 20%;
+}
+
+/*footer sns after 정렬*/
+.footer--sns ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.footer--sns li {
+  float: left;
+  width: 32%;
+  box-sizing: border-box;
+}
+
+/*footer onthissite after 정렬*/
+.footer--onthissite ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.footer--onthissite li {
+  float: left;
+  width: 20%;
+}
+
+/*sns 설정*/
+.footer--sns i {
+  font-size: 20pt;
+}
+
+/*footer copyright 설정*/
+
+.footer--copyright {
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+}
+
+.footer--copyright p {
+  display: inline-block;
+  font-family: "Cinzel", serif;
+}
+
+.footer--copyright span {
+  padding-left: 10px;
+}
