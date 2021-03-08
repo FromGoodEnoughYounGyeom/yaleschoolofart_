@@ -2,7 +2,7 @@
 
 - 현존하는 웹사이트 중 최악의 사례로 꼽힌 Yale School of Art 웹사이트를 리디자인&코딩 했습니다.
 
-👉🏻 클릭시 리디자인&코딩된 [All New Yale School of Art](https://yaleschoolofart.netlify.app/) 웹페이지로 이동합니다.
+👉🏻 클릭시 리디자인&코딩된 [All New Yale School of Art](https://yaleschoolofart.netlify.app/) 웹페이지로 이동합니다. <br/>
 👉🏻 클릭시 오리지널 [Yale School of Art](https://www.art.yale.edu/) 웹페이지로 이동합니다.
 
 <!-- TABLE OF CONTENTS -->
@@ -26,7 +26,7 @@
 
 - UI&UX를 무시하여 제작된 홈페이지를 리디자인&코딩 해보는 것을 통해 웹페이지 제작 전반에 관해 파악할 수 있다.
 - HTML, CSS, JavaScript를 사용하여 원하는 효과를 낼 수 있다.
-- 모바일&태블릿에 대응하는 반응형 페이지를 만들 수 있다.
+- 모바일에 대응하는 반응형 페이지를 만들 수 있다.
 - netlify 연동하여 작업물을 웹에 올릴 수 있다.
 
 <!--USE TECH-->
@@ -65,9 +65,7 @@
 
 -
 -
--
-
----
+- ***
 
 ## Structure
 
