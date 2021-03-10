@@ -5,13 +5,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul,
 ol {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 image {
@@ -41,12 +40,6 @@ body {
 
 /*header 배열설정*/
 
-header:after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
 .logo {
   float: left;
   width: 20%;
@@ -61,6 +54,9 @@ header:after {
 .hamburger {
   display: none;
 }
+
+
+.material-icons-outlined { font-size: 32px;}
 
 header {
   padding-top: 1%;
@@ -223,45 +219,7 @@ header {
   border-radius: 90%;
 }
 
-/*department--slideimage 상세설정
-
-.department--slideimage:after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.department--slideimage li {
-  position: relative;
-}
-
-.department--slideimage li:hover {
-  z-index: 300;
-}
-.department--slideimage a {
-  display: block;
-}
-
-.department--slideimage img {
-  width: auto;
-}
-
-.department--slideimage li a {
-  display: block;
-}
-
-.department--slideimage p {
-  position: absolute;
-  top: 50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  font-family: "Cinzel", serif;
-  font-weight: 700;
-  font-size: 16pt;
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.5),
-    0px -4px 10px rgba(255, 255, 255, 0.5);
-}
-*/
+.master {display: none;}
 
 /*슬라이드 이미지*/
 .department__image{
@@ -270,7 +228,8 @@ header {
                         margin-top: 4%;
 }
 .department__image li{position: relative;
-  overflow: hidden;}
+                      overflow: hidden;}
+
 .department__image img {max-width: 250px;
   -webkit-transform:scale(1);
   -moz-transform:scale(1);
@@ -342,22 +301,23 @@ header {
   margin-bottom: 5%;
 }
 
+.news a {
+  position: relative;
+  display: block;
+}
+
 .news img {
   width: 100%;
   height: auto;
   vertical-align: bottom;
 }
 
-.news a {
-  position: relative;
-  display: block;
-}
 
 .news a:hover {
   opacity: 0.7;
 }
 
-.news--text p {
+.news__text p {
   color: #fff;
   position: absolute;
   top: 77%;
@@ -372,7 +332,7 @@ header {
   -webkit-box-sizing: border-box;
 }
 
-.news--text span {
+.news__text span {
   display: block;
   padding-top: 30px;
   padding-left: 10px;
@@ -413,7 +373,7 @@ header {
   width: 49%;
   margin-right: 2%;
 }
-.events--performance {
+.events__performance {
   float: left;
   width: 49%;
 }
@@ -639,9 +599,238 @@ footer nav ul {
   padding-left: 10px;
 }
 
+@media (min-width:320px) and (max-width:768px) {
+
+/*header 배열설정*/
+
+header, .department, main, footer {
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;}
+
+
+header{display: flex;}
+
+.logo{width: 100%;
+      margin-top: 3%;
+}
+
+.department {margin-top: 75%;}
+
+.menu, .search{display: none;}
+
+/*logo 상세설정*/
+.logo a {
+  display: block;
+  font-weight: 700;
+  font-family: "Cinzel", serif;
+  font-size: 15pt;
+  position: relative;
+}
+
+.hamburger {
+  display: flex;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+}
+
+.department__aside {
+  display: none;
+}
+
+.master {display: block;
+    font-size: 20pt;
+    text-align: center;
+    margin-bottom: 5%;
   
+}
+
+.department__image {
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.department__image img{
+  width: 250px;
+  height: 300px;
+ 
+  transform: rotate(90deg);
+}
+
+.mainbackground {
+  height: 800px;
+}
+
+.main__piece {display: none;}
+
+main{margin-top: 40%;}
+
+.news ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 380px;
+  height: 600px;
+
+}
+
+.news li {
+  width: 90%;
+  height: 180px;
+  margin-left: 12px;
+}
+
+.news li:nth-child(1) {
+  width: 90%;
+  margin-right: 0;
+}
+.news li:nth-child(2) {
+  width: 90%;
+  margin-right: 0;
+}
+.news li:nth-child(3) {
+  width: 90%;
+  margin-right: 0;
+}
+
+.news img { position: absolute;
+            width: 150px;
+            height: 180px;
+ 
+}
+
+.news__text { 
+  position: absolute;
+  top: 0;
+  left: 150px;  
+ 
+}
+
+.news__text p {
+  top: 0;
+  width: 200px;
+  padding: 10px 10px;
+  
+}
+
+.news__text span {
+  width: 200px;
+  height: 155px;
+  margin-top: 25px;
+}
+
+
+.events__boxAfter {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.events__exhibition {
+  width: 90%;
+}
+.events__performance {
+  margin-top: 5%;
+  width: 90%;
+}
+
+
+
+/*Alumni 간격설정*/
+
+.alumni__after {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alumni__after aside {
+  width: 80%;
+}
+
+.alumni__after article {
+  width: 80%;
+}
+
+.alumni article {
+  margin-top: 5%;
+}
+
+.alumni__text__name {
+  text-align: center;
+  font-size: 14pt;
+}
+
+.alumni__text__name p {
+  display: inline-block;
+}
+
+.alumni span {
+  display: none;
+}
+
+.alumni img {
+  width: 300px;
+}
+
+.alumni h2 {
+  font-size: 20pt;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.alumni {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+#alumni__button__more {
+  margin-top: 5%;
+}
+
+footer {margin-left: 12px;}
+.footer__nav__top__wrap, .footer__nav__middle__wrap, .footer__copyright {width: 90%;}
+
+
+.footer__nav__middle__wrap {
+  display: block;
+  clear: both;
+  content: "";
+  height: 100px;
+}
+
+.footer__nav__middle__wrap p {
+  font-size: 16px;
+}
+
+.middle__wrap__sns {
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+.middle__wrap__onthissite {
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+
+.middle__wrap__onthissite li {
+  float: left;
+  width: 40%;
+}
+
+
+.middle__wrap__maincampuses {
+  display: none;
+}
+
+}
+
+
+
 /*##############################1280px이상일때##############################*/
-@media(min-width: 1280px){
+@media (min-width: 1280px){
 
 	header, .department, main, footer {width: 1040px;
 									                   margin-right: auto;
@@ -659,7 +848,9 @@ header:after{display: block; clear: both; content: ""}
 	  width: 70%;
 	  box-sizing: border-box;}
 
-header>input{width: 5%;} /*5%로 줘야 안떨어짐..왜?*/
+header>input{width: 5%;} 
+
+/*5%로 줘야 안떨어짐..왜?*/
 
 /*logo 상세설정*/
 .logo a{display:block;
@@ -673,8 +864,6 @@ header>input{width: 5%;} /*5%로 줘야 안떨어짐..왜?*/
 
 
 
-
-
 /*alumni 설정*/
 .alumni--img{float: left;
 			width: 70%;
@@ -685,14 +874,13 @@ header>input{width: 5%;} /*5%로 줘야 안떨어짐..왜?*/
 .alumni--article{float: left;
 				width:30%}
 
-
+}
 
 /*##############################1680px이상일때##############################*/
-@media(min-width: 1600px){
+@media (min-width: 1600px){
 
 	header, .department, main, footer{width: 1440px;
 									  margin-right: auto;
 									  margin-left: auto;}
 
 }
-
