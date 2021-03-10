@@ -606,7 +606,8 @@ footer nav ul {
 header, .department, main, footer {
   width: 400px;
   margin-right: auto;
-  margin-left: auto;}
+  margin-left: auto;
+  overflow-x: hidden;}
 
 
 header{display: flex;}
@@ -640,9 +641,8 @@ header{display: flex;}
 }
 
 .master {display: block;
-    font-size: 20pt;
+    font-size: 20px;
     text-align: center;
-    margin-bottom: 5%;
   
 }
 
@@ -650,13 +650,18 @@ header{display: flex;}
   height: 500px;
   flex-direction: column;
   align-items: center;
+  margin-top: 0%;
 }
 
 .department__image img{
   width: 250px;
   height: 300px;
- 
   transform: rotate(90deg);
+}
+
+.department__image p {
+  font-size: 14px;
+ 
 }
 
 .mainbackground {
@@ -665,7 +670,23 @@ header{display: flex;}
 
 .main__piece {display: none;}
 
+.more a {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.more a:hover {
+  background: #6d594e;
+}
+
 main{margin-top: 40%;}
+
+.news h2 {
+  font-size: 20px;
+}
 
 .news ul {
   display: flex;
@@ -673,13 +694,14 @@ main{margin-top: 40%;}
   justify-content: space-between;
   width: 380px;
   height: 600px;
+  margin-left: 7%;
 
 }
 
 .news li {
   width: 90%;
   height: 180px;
-  margin-left: 12px;
+  
 }
 
 .news li:nth-child(1) {
@@ -712,29 +734,41 @@ main{margin-top: 40%;}
   top: 0;
   width: 200px;
   padding: 10px 10px;
-  
+  font-size: 14px;
 }
+
 
 .news__text span {
   width: 200px;
   height: 155px;
   margin-top: 25px;
+  font-size: 13px;
 }
 
 
 .events__boxAfter {
   display: flex;
   flex-direction: column;
-  margin-left: 12px;
+  margin-left: 7%;
+  margin-bottom: 10%;
+}
+
+.events h2 {
+  font-size: 20px;
+}
+.events h3 {
+  border-bottom: 2px solid #fff;
+  font-size: 16px;
 }
 
 .events__exhibition {
   width: 90%;
 }
 .events__performance {
-  margin-top: 5%;
+  margin-top: 10%;
   width: 90%;
 }
+
 
 
 
@@ -743,14 +777,14 @@ main{margin-top: 40%;}
 .alumni__after {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 7%;
 }
 .alumni__after aside {
-  width: 80%;
+  width: 90%;
 }
 
 .alumni__after article {
-  width: 80%;
+  width: 90%;
 }
 
 .alumni article {
@@ -760,6 +794,7 @@ main{margin-top: 40%;}
 .alumni__text__name {
   text-align: center;
   font-size: 14pt;
+  letter-spacing: 1px;
 }
 
 .alumni__text__name p {
@@ -771,11 +806,11 @@ main{margin-top: 40%;}
 }
 
 .alumni img {
-  width: 300px;
+  width: 100%;
 }
 
 .alumni h2 {
-  font-size: 20pt;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -787,9 +822,12 @@ main{margin-top: 40%;}
 
 #alumni__button__more {
   margin-top: 5%;
+  text-align: center;
 }
 
-footer {margin-left: 12px;}
+footer {margin-left: 7%;
+        font-size: 14px;}
+
 .footer__nav__top__wrap, .footer__nav__middle__wrap, .footer__copyright {width: 90%;}
 
 
@@ -801,7 +839,7 @@ footer {margin-left: 12px;}
 }
 
 .footer__nav__middle__wrap p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .middle__wrap__sns {
@@ -809,6 +847,11 @@ footer {margin-left: 12px;}
   width: 40%;
   height: 100%;
 }
+
+.middle__wrap__sns li {
+  font-size: 20px;
+}
+
 .middle__wrap__onthissite {
   float: left;
   width: 60%;
