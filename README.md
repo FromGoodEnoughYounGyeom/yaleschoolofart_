@@ -57,13 +57,3 @@
 - UI&UX를 고려한 메뉴 설계
 - Yale school of art 의 이미지를 고려한 디자인
 
-
-## Structure
-
-### 전체 구조
-
-<img width="1680" alt="" src="">
-
----
-
-
