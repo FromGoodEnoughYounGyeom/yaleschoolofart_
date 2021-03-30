@@ -52,7 +52,7 @@
 
 ---
 
-<img width="%" alt="img" src="https://user-images.githubusercontent.com/68359858/110195628-d129f180-7e81-11eb-98b4-595f8523e9bd.png">
+<img width="%" alt="img" src="https://user-images.githubusercontent.com/68359858/111594298-3d0b4300-880e-11eb-8e42-1fa69a3569ed.png">
 
 - UI&UX를 고려한 메뉴 설계
 - Yale school of art 의 이미지를 고려한 디자인
