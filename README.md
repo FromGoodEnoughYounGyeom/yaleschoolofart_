@@ -57,15 +57,6 @@
 - UI&UX를 고려한 메뉴 설계
 - Yale school of art 의 이미지를 고려한 디자인
 
-### 모바일
-
----
-
-<img src="https://user-images.githubusercontent.com/68359858/110196121-acd01400-7e85-11eb-9686-785952a2e945.png">
-
--
--
-- ***
 
 ## Structure
 
@@ -75,12 +66,4 @@
 
 ---
 
-### 기능
 
-<img width="1680" style="margin:0; padding:0;" alt="" src="">
-
-1.
-2.
-3.
-
----
